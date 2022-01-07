@@ -1,0 +1,333 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.logo{
+    background-image: url("MA6 logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 1000px;
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+ 
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+ 
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+.container{
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    background-color: black;
+    color: #ffffff;
+    padding-top:10px;
+    min-height: 70px;
+    border-bottom:darkred solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+header nav{
+    text-align: center;
+    margin-top: 0.5%;
+}
+
+ul{
+    display: table;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 70%;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+  margin-left: 2%;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 15px 10px;
+    font-size: 18px;
+    display: block;
+}
+ul li a + a {
+    margin-left: 16px;
+}
+
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #FEFEFE;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+}
+ul a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+.logo{
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.members{
+    padding-top: 2%;
+    width: 80%;
+    display: flex;
+    height: 100%;
+    margin: auto;
+    align-content: center;
+}
+.members .card {
+    margin: auto;
+    margin-right: 2%;
+    background-color: rgba(41, 28, 28, 0.76);
+    width: 80%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .card h4{
+    color: white;
+    font-size: larger;
+}
+.card p{
+    color: rgb(110, 8, 8);
+    font-size: small;
+}
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px 0 rgba(243, 41, 41, 0.63);
+  }
+  
+  .inside {
+    padding: 2px 16px;
+  }
+  .card img{
+      border-radius: 5px;
+  }
+  .events{
+      margin: auto;
+      width: 80%;
+      display: flex;
+      height: 100%;
+      align-content: center;
+      padding: 2%;
+      background-color: rgb(58, 56, 56);
+      border-radius: 5px;
+  }
+  .events:hover{
+    background: gray;
+    cursor: pointer;
+  }
+  
+ .events .slikaeventa{
+    float: left;
+    width: 30%;
+    height: auto;
+    padding-left: 2%;
+    display:flex;
+
+}
+ .events .slikaeventa img{
+      border-radius: 5px;
+  }
+ .events .teksteventa{
+    float: left;
+    width: 66%;
+    height: auto;
+    color: white;
+    margin: auto;
+    padding: 2%;
+    text-align: right;
+
+}
+ .events .teksteventa p{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .events .teksteventa h5{
+      margin-top: 0;
+      font-size: 25px;
+      color: darkred;
+      margin-bottom: 0;
+  }
+  .events2{
+    margin: auto;
+    width: 80%;
+    padding-top: 2%;
+    display: flex;
+      height: 100%;
+      padding: 2%;
+      background-color: black;
+      border-radius: 5px;
+}
+
+.events2:hover{
+    background: gray;
+    cursor: pointer;
+}
+
+.events2 .slikaeventa2{
+  float: right;
+  width: 30%;
+  height: auto;
+  padding: 2;
+  display:flex;
+}
+.events2 .slikaeventa2 img{
+    border-radius: 5px;
+}
+.events2 .teksteventa2{
+  float: left;
+  width: 66%;
+  height: auto;
+  color: white;
+  margin: auto;
+  padding: 2%
+}
+.events2 .teksteventa2 p{
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.events2 .teksteventa2 h5{
+    margin-top: 0;
+    font-size: 25px;
+    color: darkred;
+    margin-bottom: 0;
+}
+.events2 .teksteventa2 a{
+    margin-top: 0;
+    font-size: 25px;
+    color: darkred;
+    margin-bottom: 0;
+}
+
+div.gallery {
+    border-radius: 5px;
+    margin: 5%;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  div.gallery img:hover {
+    transform: scale(1.5);
+  }
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    color: darkred;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
